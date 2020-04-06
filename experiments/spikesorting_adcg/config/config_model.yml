@@ -1,0 +1,35 @@
+# Dictionary element length
+dlen: 41
+numOfelements: 3
+numOfiterations: 10
+
+sparsity_tol: 2
+
+# parallelization
+parallel: 0
+
+## Initializer type
+init_mode: cluster
+# If init_mode is corr, the following parameters need to be uncommented
+peakloc: 20
+threshold: -4
+polarity: 0
+init_iterations: 3000
+
+# CSC type: comp or nncomp
+csc_type: comp
+
+# CDL type: cksvd or nncksvd
+cdl_type: cksvd
+
+interpolate: 0
+
+# noise proportion
+train_noise_prop: 1.03
+test_noise_prop: 1.03
+
+## Truth comparison parameter (Uncomment only when the truth exists)
+offset: 40
+thresh_min: -6
+thresh_max: -2
+thresh_num: 41

@@ -1,0 +1,23 @@
+channel: 0
+
+starttime_train: 0
+endtime_train: 50
+starttime_test: 0
+endtime_test: 149
+
+# Sampling frequency
+Fs: 10000
+
+# Window length
+win: 1
+
+## Read mode: normal or external
+mode: external
+
+# Normal mode
+starttime_noise: 2.1
+endtime_noise: 2.45
+
+# external mode
+noise: 0.985
+

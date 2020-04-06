@@ -1,0 +1,40 @@
+# Dictionary element length
+dlen: 41
+numOfelements: 3
+numOfiterations: 10
+
+train_sparsity_tol: 1
+test_sparsity_tol: 1
+
+# Different sparsity level for each data segment (Must have 'sparsity_level.mat' file)
+sparsity_flexible: True
+
+# Account for boundary conditions for sparse coding
+boundary: True
+
+# parallelization
+parallel: 0
+
+## Initializer type
+init_mode: external
+polarity: 0
+
+# If init_mode is corr, the following parameters need to be uncommented
+# peakloc: 20
+# threshold: -4
+# init_iterations: 3000
+
+csc_type: comp
+cdl_type: cksvd
+
+interpolate: 10
+
+# noise proportion
+train_noise_prop: 1.03
+test_noise_prop: 1.03
+
+## Truth comparison parameter (Uncomment only when the truth exists)
+offset: 40
+thresh_min: -6
+thresh_max: -2
+thresh_num: 41
